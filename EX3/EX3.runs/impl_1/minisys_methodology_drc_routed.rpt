@@ -1,0 +1,322 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jun 28 14:57:29 2020
+| Host         : LAPTOP-QNGGMKKV running 64-bit major release  (build 9200)
+| Command      : report_methodology -file minisys_methodology_drc_routed.rpt -pb minisys_methodology_drc_routed.pb -rpx minisys_methodology_drc_routed.rpx
+| Design       : minisys
+| Device       : xc7a100tfgg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 57
++-----------+----------+--------------------------+------------+
+| Rule      | Severity | Description              | Violations |
++-----------+----------+--------------------------+------------+
+| TIMING-14 | Warning  | LUT on the clock tree    | 1          |
+| TIMING-20 | Warning  | Non-clocked latch        | 51         |
+| TIMING-23 | Warning  | Combinational loop found | 5          |
++-----------+----------+--------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-14#1 Warning
+LUT on the clock tree  
+The LUT n_0_2246_BUFG_inst_i_1 has been found on the clock tree. Run opt_design to optimize the clock trees, then re-run report_methodology. If LUT(s) are still present in the clock trees, modify the RTL or the synthesis options accordingly to move the clock gating logic to dedicated clock enable resources. Keep in mind that post-opt_design database cannot be used for pin-planning tasks
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch u_cu/ALUOp_reg[0] cannot be properly analyzed as its control pin u_cu/ALUOp_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch u_cu/ALUOp_reg[1] cannot be properly analyzed as its control pin u_cu/ALUOp_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch u_cu/ALUOp_reg[2] cannot be properly analyzed as its control pin u_cu/ALUOp_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch u_cu/ALUOp_reg[3] cannot be properly analyzed as its control pin u_cu/ALUOp_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch u_cu/ALUOp_reg[4] cannot be properly analyzed as its control pin u_cu/ALUOp_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch u_cu/BSel_reg cannot be properly analyzed as its control pin u_cu/BSel_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch u_cu/DMWr_reg cannot be properly analyzed as its control pin u_cu/DMWr_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch u_cu/EXTOp_reg cannot be properly analyzed as its control pin u_cu/EXTOp_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch u_cu/IRWr_reg cannot be properly analyzed as its control pin u_cu/IRWr_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch u_cu/NPCOp_reg[0] cannot be properly analyzed as its control pin u_cu/NPCOp_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch u_cu/NPCOp_reg[1] cannot be properly analyzed as its control pin u_cu/NPCOp_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch u_cu/PCWr_reg cannot be properly analyzed as its control pin u_cu/PCWr_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch u_cu/RFWr_reg cannot be properly analyzed as its control pin u_cu/RFWr_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch u_cu/WDSel_reg[0] cannot be properly analyzed as its control pin u_cu/WDSel_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch u_cu/WDSel_reg[1] cannot be properly analyzed as its control pin u_cu/WDSel_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch u_cu/WRSel_reg[0] cannot be properly analyzed as its control pin u_cu/WRSel_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch u_cu/WRSel_reg[1] cannot be properly analyzed as its control pin u_cu/WRSel_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch u_cu/ZeroG_reg cannot be properly analyzed as its control pin u_cu/ZeroG_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch u_cu/backsign_reg cannot be properly analyzed as its control pin u_cu/backsign_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111080] cannot be properly analyzed as its control pin u_rf/WD[-1111111080]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111081] cannot be properly analyzed as its control pin u_rf/WD[-1111111081]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111082] cannot be properly analyzed as its control pin u_rf/WD[-1111111082]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111083] cannot be properly analyzed as its control pin u_rf/WD[-1111111083]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111084] cannot be properly analyzed as its control pin u_rf/WD[-1111111084]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111085] cannot be properly analyzed as its control pin u_rf/WD[-1111111085]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111086] cannot be properly analyzed as its control pin u_rf/WD[-1111111086]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111087] cannot be properly analyzed as its control pin u_rf/WD[-1111111087]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111088] cannot be properly analyzed as its control pin u_rf/WD[-1111111088]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111089] cannot be properly analyzed as its control pin u_rf/WD[-1111111089]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111090] cannot be properly analyzed as its control pin u_rf/WD[-1111111090]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111091] cannot be properly analyzed as its control pin u_rf/WD[-1111111091]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111092] cannot be properly analyzed as its control pin u_rf/WD[-1111111092]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111093] cannot be properly analyzed as its control pin u_rf/WD[-1111111093]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111094] cannot be properly analyzed as its control pin u_rf/WD[-1111111094]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111095] cannot be properly analyzed as its control pin u_rf/WD[-1111111095]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111096] cannot be properly analyzed as its control pin u_rf/WD[-1111111096]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111097] cannot be properly analyzed as its control pin u_rf/WD[-1111111097]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111098] cannot be properly analyzed as its control pin u_rf/WD[-1111111098]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111099] cannot be properly analyzed as its control pin u_rf/WD[-1111111099]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111100] cannot be properly analyzed as its control pin u_rf/WD[-1111111100]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111101] cannot be properly analyzed as its control pin u_rf/WD[-1111111101]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111102] cannot be properly analyzed as its control pin u_rf/WD[-1111111102]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111103] cannot be properly analyzed as its control pin u_rf/WD[-1111111103]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111104] cannot be properly analyzed as its control pin u_rf/WD[-1111111104]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111105] cannot be properly analyzed as its control pin u_rf/WD[-1111111105]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111106] cannot be properly analyzed as its control pin u_rf/WD[-1111111106]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111107] cannot be properly analyzed as its control pin u_rf/WD[-1111111107]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111108] cannot be properly analyzed as its control pin u_rf/WD[-1111111108]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111109] cannot be properly analyzed as its control pin u_rf/WD[-1111111109]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111110] cannot be properly analyzed as its control pin u_rf/WD[-1111111110]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch u_rf/WD[-1111111111] cannot be properly analyzed as its control pin u_rf/WD[-1111111111]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-23#1 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between u_IR/regs[12][31]_i_5/I3 and u_IR/regs[12][31]_i_5/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#2 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between u_IR/regs[1][31]_i_2/I3 and u_IR/regs[1][31]_i_2/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#3 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between u_cu/regs[12][31]_i_4/I0 and u_cu/regs[12][31]_i_4/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#4 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between u_cu/regs[12][31]_i_6/I0 and u_cu/regs[12][31]_i_6/O to disable the timing loop
+Related violations: <none>
+
+TIMING-23#5 Warning
+Combinational loop found  
+A timing loop has been detected on a combinational path. A timing arc has been disabled between u_cu/regs[9][31]_i_3/I0 and u_cu/regs[9][31]_i_3/O to disable the timing loop
+Related violations: <none>
+
+

@@ -1,0 +1,121 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Jun 28 14:56:38 2020
+| Host         : LAPTOP-QNGGMKKV running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file minisys_control_sets_placed.rpt
+| Design       : minisys
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    52 |
+| Unused register locations in slices containing registers |    80 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            8 |
+|      2 |            1 |
+|      4 |            1 |
+|      5 |            1 |
+|      7 |            1 |
+|    16+ |           40 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             164 |           76 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              25 |           11 |
+| Yes          | No                    | No                     |            1092 |          521 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              63 |           20 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------+---------------------------+---------------------+------------------+----------------+
+|        Clock Signal        |       Enable Signal       |   Set/Reset Signal  | Slice Load Count | Bel Load Count |
++----------------------------+---------------------------+---------------------+------------------+----------------+
+|  u_IR/ZeroG2_out           |                           |                     |                1 |              1 |
+|  u_IR/BSel3_out            |                           |                     |                1 |              1 |
+|  u_IR/DMWr9_out            |                           |                     |                1 |              1 |
+|  u_IR/EXTOp1_out           |                           |                     |                1 |              1 |
+|  u_IR/Current_State_reg[2] |                           | rst_IBUF            |                1 |              1 |
+|  u_IR/backsign16_out       |                           |                     |                1 |              1 |
+|  u_IR/ins_out_reg[29]_0    |                           | rst_IBUF            |                1 |              1 |
+|  u_IR/ins_out_reg[4]_0     |                           | rst_IBUF            |                1 |              1 |
+|  u_cu/NPCOp_reg[1]_i_2_n_1 |                           | rst_IBUF            |                1 |              2 |
+|  u_cu/WRSel_reg[1]_i_2_n_1 |                           | rst_IBUF            |                2 |              4 |
+|  u_IR/E[0]                 |                           |                     |                3 |              5 |
+|  u_clk/cc/inst/clk_out1    |                           |                     |                4 |              7 |
+|  n_0_2246_BUFG             |                           | u_ext/imm_reg[31]_0 |                5 |             16 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_0           | u_cu/init_reg       |                9 |             31 |
+|  WD0                       |                           |                     |               12 |             32 |
+| ~n_0_2246_BUFG             | u_cu/ALUOp_reg[3]_2[0]    |                     |               25 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_89      |                     |               10 |             32 |
+|  n_0_2246_BUFG             | u_cu/E[0]                 |                     |                9 |             32 |
+|  n_0_2246_BUFG             | u_npc/NPCtoPC[31]_i_1_n_1 | rst_IBUF            |               11 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_1           |                     |               11 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_3           |                     |               11 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_4           |                     |               12 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_2           |                     |               11 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep         |                     |               16 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_1       |                     |               32 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_10      |                     |               18 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_0       |                     |               12 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_5       |                     |               12 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_2       |                     |               14 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_18      |                     |               24 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_20      |                     |               19 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_23      |                     |               11 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_3       |                     |                9 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_14      |                     |               11 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_15      |                     |               15 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_17      |                     |               20 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_4       |                     |               11 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_13      |                     |               14 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_16      |                     |               12 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_19      |                     |               21 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_12      |                     |               13 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_11      |                     |               12 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_21      |                     |               15 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_9       |                     |               22 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_22      |                     |               11 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_6       |                     |               15 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_7       |                     |               18 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_8       |                     |               18 |             32 |
+| ~n_0_2246_BUFG             | u_cu/init_reg_rep_88      |                     |               15 |             32 |
+|  n_0_2246_BUFG             | u_cu/IRWr                 |                     |               22 |             36 |
+| ~n_0_2246_BUFG             |                           |                     |               25 |             52 |
+|  n_0_2246_BUFG             |                           |                     |               27 |             63 |
++----------------------------+---------------------------+---------------------+------------------+----------------+
+
+

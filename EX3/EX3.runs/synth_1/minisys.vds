@@ -1,0 +1,631 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun 28 14:54:29 2020
+# Process ID: 12548
+# Current directory: D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1
+# Command line: vivado.exe -log minisys.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source minisys.tcl
+# Log file: D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1/minisys.vds
+# Journal file: D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source minisys.tcl -notrace
+Command: synth_design -top minisys -part xc7a100tfgg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9860 
+WARNING: [Synth 8-2490] overwriting previous definition of module para [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/para.v:91]
+WARNING: [Synth 8-2490] overwriting previous definition of module para [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/para.v:91]
+WARNING: [Synth 8-2490] overwriting previous definition of module para [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/para.v:91]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 408.574 ; gain = 116.055
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'minisys' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/minisys.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CLK' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CLK.v:23]
+INFO: [Synth 8-6157] synthesizing module 'cpuclk' [D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1/.Xil/Vivado-12548-LAPTOP-QNGGMKKV/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'cpuclk' (1#1) [D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1/.Xil/Vivado-12548-LAPTOP-QNGGMKKV/realtime/cpuclk_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'CLK' (2#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CLK.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/PC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/NPC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'EXT_4_NPC' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/EXT_4_NPC.v:23]
+INFO: [Synth 8-226] default block is never used [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/EXT_4_NPC.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'EXT_4_NPC' (4#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/EXT_4_NPC.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (5#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/NPC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'programrom' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/programrom.v:23]
+INFO: [Synth 8-6157] synthesizing module 'prgrom' [D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1/.Xil/Vivado-12548-LAPTOP-QNGGMKKV/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'prgrom' (6#1) [D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1/.Xil/Vivado-12548-LAPTOP-QNGGMKKV/realtime/prgrom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'programrom' (7#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/programrom.v:23]
+INFO: [Synth 8-6157] synthesizing module 'S_EXT' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/S_EXT.v:23]
+INFO: [Synth 8-226] default block is never used [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/S_EXT.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'S_EXT' (8#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/S_EXT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RF' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/RF.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (9#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/RF.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dmemory32' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/dmemory32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'RAM' [D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1/.Xil/Vivado-12548-LAPTOP-QNGGMKKV/realtime/RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'RAM' (10#1) [D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1/.Xil/Vivado-12548-LAPTOP-QNGGMKKV/realtime/RAM_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dmemory32' (11#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/dmemory32.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/ALU.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/ALU.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (12#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/ALU.v:24]
+INFO: [Synth 8-6157] synthesizing module 'CU' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:30]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:121]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:852]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (13#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:30]
+INFO: [Synth 8-6157] synthesizing module 'AR_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/AR_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'AR_reg' (14#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/AR_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IR_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/IR_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'IR_reg' (15#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/IR_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'minisys' (16#1) [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/minisys.v:23]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[31]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[30]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[29]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[28]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[27]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[26]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[25]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[24]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[23]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[22]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[21]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[20]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[19]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[18]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[17]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[16]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[1]
+WARNING: [Synth 8-3331] design dmemory32 has unconnected port address[0]
+WARNING: [Synth 8-3331] design RF has unconnected port instruction[10]
+WARNING: [Synth 8-3331] design RF has unconnected port instruction[9]
+WARNING: [Synth 8-3331] design RF has unconnected port instruction[8]
+WARNING: [Synth 8-3331] design RF has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design RF has unconnected port instruction[6]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[31]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[30]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[29]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[28]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[27]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[26]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[25]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[24]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[23]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[22]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[21]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[20]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[19]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[18]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[17]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[16]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[1]
+WARNING: [Synth 8-3331] design programrom has unconnected port PC[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 457.344 ; gain = 164.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 457.344 ; gain = 164.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 457.344 ; gain = 164.824
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tfgg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/ip/RAM/RAM/prgrom_in_context.xdc] for cell 'u_ram/ram'
+Finished Parsing XDC File [d:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/ip/RAM/RAM/prgrom_in_context.xdc] for cell 'u_ram/ram'
+Parsing XDC File [d:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/ip/prgrom/prgrom/prgrom_in_context.xdc] for cell 'u_rom/instmem'
+Finished Parsing XDC File [d:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/ip/prgrom/prgrom/prgrom_in_context.xdc] for cell 'u_rom/instmem'
+Parsing XDC File [d:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc] for cell 'u_clk/cc'
+Finished Parsing XDC File [d:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc] for cell 'u_clk/cc'
+Parsing XDC File [D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 816.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 816.680 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.174 . Memory (MB): peak = 816.680 ; gain = 0.418
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_ram/ram' at clock pin 'clka' is different from the actual clock period '18.182', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_rom/instmem' at clock pin 'clka' is different from the actual clock period '18.182', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 818.270 ; gain = 525.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tfgg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 818.270 ; gain = 525.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/ip/cpuclk/cpuclk/cpuclk_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for u_ram/ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_rom/instmem. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_clk/cc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 818.270 ; gain = 525.750
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "regs_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "regs_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "NPCOp" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'WD' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/RF.v:58]
+WARNING: [Synth 8-327] inferring latch for variable 'backsign_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:131]
+WARNING: [Synth 8-327] inferring latch for variable 'NPCOp_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:110]
+WARNING: [Synth 8-327] inferring latch for variable 'PCWr_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:111]
+WARNING: [Synth 8-327] inferring latch for variable 'IRWr_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:112]
+WARNING: [Synth 8-327] inferring latch for variable 'RFWr_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:114]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:139]
+WARNING: [Synth 8-327] inferring latch for variable 'DMWr_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:133]
+WARNING: [Synth 8-327] inferring latch for variable 'WRSel_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:116]
+WARNING: [Synth 8-327] inferring latch for variable 'WDSel_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:115]
+WARNING: [Synth 8-327] inferring latch for variable 'BSel_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:141]
+WARNING: [Synth 8-327] inferring latch for variable 'ZeroG_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:140]
+WARNING: [Synth 8-327] inferring latch for variable 'EXTOp_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:132]
+WARNING: [Synth 8-327] inferring latch for variable 'backsign2_reg' [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/CU.v:135]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 818.270 ; gain = 525.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 40    
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 79    
+	   2 Input      5 Bit        Muxes := 3     
+	  18 Input      5 Bit        Muxes := 1     
+	  16 Input      5 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	  15 Input      3 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	  16 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 84    
+	   4 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 9     
+	  18 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 2     
+	  15 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module EXT_4_NPC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module NPC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module S_EXT 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module RF 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 71    
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 64    
+	   4 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 1     
+Module CU 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	  18 Input      5 Bit        Muxes := 1     
+	  16 Input      5 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 2     
+	  15 Input      3 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	  16 Input      2 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 20    
+	  18 Input      1 Bit        Muxes := 10    
+	   6 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 2     
+	  15 Input      1 Bit        Muxes := 1     
+Module AR_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module IR_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3936] Found unconnected internal register 'u_AR/AR_reg' and it is trimmed from '32' to '16' bits. [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/AR_reg.v:31]
+WARNING: [Synth 8-3331] design RF has unconnected port instruction[10]
+WARNING: [Synth 8-3331] design RF has unconnected port instruction[9]
+WARNING: [Synth 8-3331] design RF has unconnected port instruction[8]
+WARNING: [Synth 8-3331] design RF has unconnected port instruction[7]
+WARNING: [Synth 8-3331] design RF has unconnected port instruction[6]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_cu/backsign2_reg )
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[16]' (FD_1) to 'u_ext/imm_reg[17]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[17]' (FD_1) to 'u_ext/imm_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[18]' (FD_1) to 'u_ext/imm_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[19]' (FD_1) to 'u_ext/imm_reg[20]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[20]' (FD_1) to 'u_ext/imm_reg[21]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[21]' (FD_1) to 'u_ext/imm_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[22]' (FD_1) to 'u_ext/imm_reg[23]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[23]' (FD_1) to 'u_ext/imm_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[24]' (FD_1) to 'u_ext/imm_reg[25]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[25]' (FD_1) to 'u_ext/imm_reg[26]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[26]' (FD_1) to 'u_ext/imm_reg[27]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[27]' (FD_1) to 'u_ext/imm_reg[28]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[28]' (FD_1) to 'u_ext/imm_reg[29]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[29]' (FD_1) to 'u_ext/imm_reg[30]'
+INFO: [Synth 8-3886] merging instance 'u_ext/imm_reg[30]' (FD_1) to 'u_ext/imm_reg[31]'
+WARNING: [Synth 8-3332] Sequential element (u_cu/backsign2_reg) is unused and will be removed from module minisys.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 818.270 ; gain = 525.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clk/cc/clk_out1' to pin 'u_clk/cc/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 818.270 ; gain = 525.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:56 . Memory (MB): peak = 961.723 ; gain = 669.203
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_1175/O (LUT3)
+     1: i_1175/I2 (LUT3)
+     2: i_4/O (LUT3)
+     3: i_4/I0 (LUT3)
+     4: i_1175/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/minisys.v:23]
+Inferred a: "set_disable_timing -from I2 -to O i_1175"
+Found timing loop:
+     0: i_1174/O (LUT2)
+     1: i_1174/I1 (LUT2)
+     2: i_2203/O (LUT3)
+     3: i_2203/I0 (LUT3)
+     4: i_1174/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/minisys.v:23]
+Inferred a: "set_disable_timing -from I1 -to O i_1174"
+Found timing loop:
+     0: i_1172/O (LUT3)
+     1: i_1172/I2 (LUT3)
+     2: i_6/O (LUT3)
+     3: i_6/I0 (LUT3)
+     4: i_1172/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/minisys.v:23]
+Inferred a: "set_disable_timing -from I2 -to O i_1172"
+Found timing loop:
+     0: i_1173/O (LUT3)
+     1: i_1173/I2 (LUT3)
+     2: i_5/O (LUT3)
+     3: i_5/I0 (LUT3)
+     4: i_1173/O (LUT3)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/minisys.v:23]
+Inferred a: "set_disable_timing -from I2 -to O i_1173"
+Found timing loop:
+     0: i_1171/O (LUT2)
+     1: i_1171/I1 (LUT2)
+     2: i_2202/O (LUT3)
+     3: i_2202/I0 (LUT3)
+     4: i_1171/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/minisys.v:23]
+Inferred a: "set_disable_timing -from I1 -to O i_1171"
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:00:59 . Memory (MB): peak = 962.730 ; gain = 670.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 962.730 ; gain = 670.211
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 962.730 ; gain = 670.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Found timing loop:
+     0: \regs[12][31]_i_6 /O (LUT5)
+     1: \regs[12][31]_i_6 /I0 (LUT5)
+     2: \regs[0][31]_i_6 /O (LUT5)
+     3: \regs[0][31]_i_6 /I0 (LUT5)
+     4: \regs[12][31]_i_6 /O (LUT5)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/minisys.v:23]
+Inferred a: "set_disable_timing -from I0 -to O \regs[12][31]_i_6 "
+Found timing loop:
+     0: \regs[12][31]_i_5 /O (LUT5)
+     1: \regs[12][31]_i_5 /I3 (LUT5)
+     2: \regs[0][31]_i_5 /O (LUT5)
+     3: \regs[0][31]_i_5 /I3 (LUT5)
+     4: \regs[12][31]_i_5 /O (LUT5)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/minisys.v:23]
+Inferred a: "set_disable_timing -from I3 -to O \regs[12][31]_i_5 "
+Found timing loop:
+     0: \regs[12][31]_i_4 /O (LUT5)
+     1: \regs[12][31]_i_4 /I0 (LUT5)
+     2: \regs[0][31]_i_4 /O (LUT5)
+     3: \regs[0][31]_i_4 /I0 (LUT5)
+     4: \regs[12][31]_i_4 /O (LUT5)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/minisys.v:23]
+Inferred a: "set_disable_timing -from I0 -to O \regs[12][31]_i_4 "
+Found timing loop:
+     0: \regs[9][31]_i_3 /O (LUT5)
+     1: \regs[9][31]_i_3 /I0 (LUT5)
+     2: \regs[1][31]_i_3 /O (LUT5)
+     3: \regs[1][31]_i_3 /I0 (LUT5)
+     4: \regs[9][31]_i_3 /O (LUT5)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [D:/ComDesignExp/EX3/EX3/EX3.srcs/sources_1/new/minisys.v:23]
+Inferred a: "set_disable_timing -from I0 -to O \regs[9][31]_i_3 "
+WARNING: [Synth 8-326] inferred exception to break timing loop: 'set_false_path -through \regs[1][31]_i_2 /O'
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 962.730 ; gain = 670.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 962.730 ; gain = 670.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 962.730 ; gain = 670.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 962.730 ; gain = 670.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |cpuclk        |         1|
+|2     |RAM           |         1|
+|3     |prgrom        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |RAM    |     1|
+|2     |cpuclk |     1|
+|3     |prgrom |     1|
+|4     |BUFG   |     2|
+|5     |CARRY4 |    44|
+|6     |LUT1   |     3|
+|7     |LUT2   |   189|
+|8     |LUT3   |    71|
+|9     |LUT4   |   127|
+|10    |LUT5   |   243|
+|11    |LUT6   |  1353|
+|12    |MUXF7  |   256|
+|13    |FDRE   |  1210|
+|14    |FDSE   |    47|
+|15    |LD     |    42|
+|16    |LDC    |     6|
+|17    |LDP    |     3|
+|18    |IBUF   |     1|
+|19    |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |  3694|
+|2     |  u_AR   |AR_reg     |    14|
+|3     |  u_IR   |IR_reg     |   176|
+|4     |  u_alu  |ALU        |   806|
+|5     |  u_clk  |CLK        |     1|
+|6     |  u_cu   |CU         |   531|
+|7     |  u_ext  |S_EXT      |    34|
+|8     |  u_npc  |NPC        |    51|
+|9     |  u_pc   |PC         |    42|
+|10    |  u_ram  |dmemory32  |    32|
+|11    |  u_rf   |RF         |  1939|
+|12    |  u_rom  |programrom |    32|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 962.730 ; gain = 670.211
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 9 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:00:53 . Memory (MB): peak = 962.730 ; gain = 309.285
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 962.730 ; gain = 670.211
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 351 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 962.730 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 51 instances were transformed.
+  LD => LDCE: 42 instances
+  LDC => LDCE: 6 instances
+  LDP => LDPE: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+99 Infos, 68 Warnings, 9 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 962.730 ; gain = 681.676
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 962.730 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/ComDesignExp/EX3/EX3/EX3.runs/synth_1/minisys.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file minisys_utilization_synth.rpt -pb minisys_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun 28 14:55:39 2020...
