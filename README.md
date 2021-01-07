@@ -1,2 +1,2 @@
 # Multi-Cycle-Processor
-## multi cycle cpu implementation by verilog
+multi cycle cpu implementation by verilog
